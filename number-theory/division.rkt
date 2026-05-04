@@ -3,6 +3,7 @@
 (require "../primitives.rkt"
          "../arithmetic/core.rkt"
          "../logic/core.rkt"
+         "../predicates/core.rkt"
          "../predicates/extended.rkt")
 
 (provide Div Mod)
@@ -22,3 +23,7 @@
                                        (P-k-i 2 1)
                                        (P-k-i 2 2))
                               (P-k-i 2 2))))
+
+(define Divides (compose IsZero (compose Mod (P-k-i 2 2) (P-k-i 2 1))))
+
+;; GCD via μ-recursive search over possible divisors
