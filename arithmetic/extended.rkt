@@ -5,7 +5,7 @@
          "../predicates/core.rkt"
          "core.rkt")
 
-(provide Pow Fact)
+(provide Pow Fact Min Max)
 
 (define RPow
   (rho (C-k-n 1 1)
