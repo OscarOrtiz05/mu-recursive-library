@@ -85,4 +85,4 @@ Then import int Racket
 ---
 
 ## Lisecnce
-MIT Lisence (See LISENCE file)
+GPLv3 Lisence (See LISENCE file)
